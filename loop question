@@ -15,6 +15,7 @@ int main() {
          }
      }
      */
+/*
 //2-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
    int number;
    cout<<"Enter the number : ";
@@ -24,6 +25,8 @@ int main() {
            cout<<"result "<<i<<endl;
        }
    }
+*/
+/*
 //3--find the number power given by the user like num=5,power=3,result=125
 int n,power,num;
     cout<<"Enter the number :";
@@ -35,6 +38,54 @@ int n,power,num;
               num=num*n; 
     }
     cout<<"result"<<num;
+*/
+/*
+    //4-sum of natural number;
+    int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+    int num=0;
+    for(int i=1;i<=n;i++){
+        num=num+i;
+    }
+     cout<<num;
+  */  
+//5-factorial
+   /* int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+    int fact=1;
+    for(int i=1;i<=n;i++){
+       fact=fact*i;
+    }
+    cout<<fact;
+   */
+
+ //6 - prime number 
+  /*  int n;
+    cout<<"Enter the number : ";
+    cin>>n;
+    if(n<2){
+        cout<<"Not Prime";
+        return 0;
+    }
+    else{
+        for(int i=2;i<n;i++){
+            if(n%i==0){
+                cout<<"Not Prime";
+                return 0;
+            }
+            
+        }
+        cout<<"Prime number ";
+    }
+*/
+07- fabinocci number
+
+
     
+   
+
+
     return 0;
 }
