@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     // Write C++ code here
     //cout<<"hello world";
-  //  Print all Odd numbers from 1 to n, take n as an input from the user.
+  //1--Print all Odd numbers from 1 to n, take n as an input from the user.
    /*
      int number;
      cout<<"Enter the number:"<<endl;
@@ -15,7 +15,7 @@ int main() {
          }
      }
      */
-//Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
+//2-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
    int number;
    cout<<"Enter the number : ";
    cin>>number;
@@ -24,7 +24,17 @@ int main() {
            cout<<"result "<<i<<endl;
        }
    }
-
-
+//3--find the number power given by the user like num=5,power=3,result=125
+int n,power,num;
+    cout<<"Enter the number :";
+    cin>>n;
+    cout<<"Enter the power : ";
+    cin>>power;
+    num=n;
+    for(int i=1;i<power;i++){
+              num=num*n; 
+    }
+    cout<<"result"<<num;
+    
     return 0;
 }
