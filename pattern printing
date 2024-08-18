@@ -1,1 +1,101 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    //question-1
+    //square
+    
+    // for(int i=1;i<=5;i++){
+    //     for(int j=1;j<=5;j++){
+    //       cout<<"*";
+    //     }
+    //     cout<<endl;
+    // }
+    
+    /*
+    question-2
+    11111
+    22222
+    33333
+    44444*/
+    
+//     for(int i=1;i<=5;i++){
+//      for(int j=1;j<=5;j++){
+//             cout<<i;       
+//         }
+//         cout<<endl;
+//     }
+// 
 
+  /*
+  question-3
+  12345
+  12345
+  12345
+  */
+  
+//   for(int i =1;i<5;i++){
+//       for(int j=0;j<5;j++){
+//           cout<<j;
+//       }
+//       cout<<endl;
+//   }
+
+//question 4-reverse of question 3
+//  for(int i=1;i<=5;i++){
+//      for(int j=5;j>=1;j--){
+//          cout<<j;
+//      }
+//      cout<<endl;
+//  } 
+ //question 5-square (reverse of question 3)
+//  for(int i=1;i<5;i++){
+//      for(int j=1;j<=5;j++){
+//          cout<<j*j<<" ";
+//      }
+//      cout<<endl;
+//  }
+  
+ /*
+ question-6 
+ aaaaaa
+ bbbbbb
+ cccccc
+ */
+ 
+
+//  for(int i=0;i<=5;i++){
+//      char name = 'a'+i-1;
+//      for(int j=0;j<5;j++){
+//          cout<<name;
+//      }
+//      cout<<endl;
+//  }
+  
+//   for(int i=0;i<5;i++){
+//       for(char j='a';j<='e';j++){
+//           cout<<j;
+//       }
+//       cout<<endl;
+//   }
+ 
+ 
+//   for(char i='a';i<='e';i++){
+//       for(int j=1;j<5;j++){
+//           cout<<i;
+//       }
+//       cout<<endl;
+//   }
+  // 1-25
+  int sum = 0; 
+  for(int i=1;i<=5;i++){
+      for(int j=1;j<=5;j++){
+          cout<<sum<<" ";
+          sum++;
+      }
+      cout<<endl;
+  }
+  
+      return 0;
+ }
+ 
