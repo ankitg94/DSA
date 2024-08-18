@@ -1,0 +1,29 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace  std;
+
+int main() {
+    //sum of digit
+    
+    int num, rem, ans=0;
+    cout<<"Enter the number : ";
+    cin>>num; 
+    
+    while(num != 0){
+        
+        rem = num%10;
+        num = num/10;
+        ans=ans+rem;
+    }
+    if(ans>9){
+        
+        int myrem = ans%10;
+        int myans = ans/10;
+        myans = myans+myrem;
+     
+        cout<<myans;
+    }else{
+    cout<<ans;
+    }
+    return 0;
+}
