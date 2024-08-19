@@ -76,6 +76,25 @@ int main() {
          }
      }
      cout<<"No square root is available for this number:"<<x;
+   //palindrome check
+   int x,rem,ans=0;
+   cout<<"Enter the value :";
+   cin>>x;
+   int newx=x;
+   while(x!=0){
+       rem = x%10;
+       x=x/10;
+       ans=ans*10+rem;
+      
+   }
+   
+  // cout<<newx<<"x"<<ans<<"ans";
+   if( newx == ans){
+       cout<<"This is the palindrome number : "<<ans;
+   }else{
+   cout<<"this is not the palindrome number : "<<ans;
+   }   
+ 
 
 
 }
