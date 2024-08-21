@@ -1,0 +1,57 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+// char convert(char name){
+    
+//     char ans = name-'a'+'A' ;
+    
+//     return ans;
+// }
+
+int  countDigit(int n ){
+    
+    int count = 0;
+    while(n>0){
+        count++;
+        n=n/10;
+    }
+    return count;
+}
+
+int  armStrongnumber(int number,int digit){
+    int ans=0,rem;
+    while(number > 0){
+    rem = number%10;
+    number=number/10;
+    ans=ans + pow(rem,digit);
+    }
+    return ans;
+}
+
+int main() {
+    //ans-1
+    // char value;
+    // cout<<"Enter the value";
+    // cin>>value;
+    // cout<<convert(value);
+    
+    // ans-2
+    int num ;
+    cout<<" Enter the number : ";
+    cin >> num ;
+    int digit = countDigit(num);
+    int result = armStrongnumber(num,digit);
+    if(num == result){
+        cout<<"this is the armstrong number : ";
+    }
+    else{
+    cout<<"this is not the armstrong number";    
+    }
+    
+    
+    
+
+    return 0;
+}
