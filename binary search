@@ -31,3 +31,38 @@ int main() {
  
     return 0;
 }
+
+
+// int binarySearch (int arr[],int target){
+//      int start = 0;
+//      int end = 5;
+//      while(start<=end){
+//         int mid = start+(end-start)/2;
+//         if(arr[mid] == target){
+//             return  mid;
+//         }
+//         else if(arr[mid]<target){
+//             start = mid+1;
+//         }
+//         else {
+//             end =mid-1; 
+//         }
+//     }
+//     return -1;
+// }
+// int main() {
+    
+//     int arr[6]={2,3,6,8,10,14};
+//     int target;
+//     cout<<"Enter the target :";
+//     cin>>target;
+    
+//     int index=binarySearch(arr,target);
+//     if(index!=-1){
+//         cout<<"target number is found "<< target << " index : "<<index;
+//     }else{
+//         cout<<"no reult is found : ";
+//     }
+
+//     return 0;
+// }
