@@ -52,22 +52,22 @@ cccccc
 
    advance pattern
 
-//Q1-pyramid
-//Q-2 numerical pyramid
-//Q-3 palindrome pyramid
-//Q-4 reverse pyramid -- (Q1)
-//Q-5 hollow rohmbus
-//Q-5 butterfly
+Q-1pyramid
+Q-2 numerical pyramid
+Q-3 palindrome pyramid
+Q-4 reverse pyramid -- (Q1)
+Q-5 hollow rohmbus
+Q-5 butterfly
 
 
     advance loop
-  //Question-1 swim or not;
-//question-2 even and postive;
-//question-3 check three number;
-//question-4 take the input n check the even ;
-//question-5 find factorial;
-//question-6 print all the number which is not divisble by 3 and 5;
-//question-7 :check prime;
+1-swim or not;
+2-even and postive;
+3-check three number;
+4-take the input n check the even ;
+5-find factorial;
+6-print all the number which is not divisble by 3 and 5;
+7-check prime;
 
 
  chapter -1  function
@@ -76,10 +76,10 @@ cccccc
 3- sum of digit;
 4-leap year ;
 5-reverse integer;
-6- power of 2 or not;
-7- exact squareRoot ;
-8- palindrome check;
-9- complement of the number;
+6-power of 2 or not;
+7-exact squareRoot ;
+8-palindrome check;
+9-complement of the number;
 
   chapter-2 sorting 
 1-bubble sort; 
@@ -90,12 +90,12 @@ cccccc
 
 1-linaer search;
 2-reverse the array;
-3- second max;
-4-missing number  
-5-fibbonacci series
+3-second max;
+4-missing number ;
+5-fibbonacci series;
 
 
  chapter-4 binary search
- 1-binary search 
- 2- binary search with index
- 3-first & last occurence via  binary search in array
+ 1-binary search ;
+ 2-binary search with index ;
+ 3-first & last occurence via  binary search in array ;
