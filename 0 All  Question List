@@ -2,7 +2,7 @@
                                       Question List 
 
 
-  basic loop
+  chapter-0  basic loop
 
 1--Print all Odd numbers from 1 to n, take n as an input from the user.
 2-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
@@ -70,7 +70,7 @@ cccccc
 //question-7 :check prime;
 
 
- function
+ chapter -1  function
 1-find char convert(char name);
 2-find  armStrongnumber;
 3- sum of digit;
@@ -81,12 +81,12 @@ cccccc
 8- palindrome check;
 9- complement of the number;
 
-  sorting 
+  chapter-2 sorting 
 1-bubble sort; 
 2-selection sort ;
 3-insertion sort;
 
-  array
+  chapter-3 array
 
 1-linaer search;
 2-reverse the array;
@@ -95,7 +95,7 @@ cccccc
 5-fibbonacci series
 
 
-  binary search
+ chapter-4 binary search
  1-binary search 
  2- binary search with index
  3-first & last occurence via  binary search in array
