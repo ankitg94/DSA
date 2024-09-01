@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+
+int global=20;//global variable
+
+void display(){
+    cout<<"display"<<global;
+    
+}
+
+
+int main() {
+ //   int local=20;
+    // cout<<"local variable : "<<local<<endl;
+    // cout<<"global variable in local scope : "<<global<<endl;
+    // cout<<"Global result : "<<::global<<endl;
+    display();
+    global=4;
+    // cout<<"refree"<<endl;
+    display();
+
+
+
+    return 0;
+}
