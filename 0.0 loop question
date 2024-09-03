@@ -4,6 +4,44 @@ using namespace std;
 int main() {
     // Write C++ code here
     //cout<<"hello world";
+
+ // "print a to z"
+    // for(char i='a';i<='z';i++){
+    //     cout<<i<<endl;
+    // }
+    
+    
+    
+    //table of any number;
+    // int n;
+    // cout<<"Enter the number : ";
+    // cin>>n;
+    // for(int i=1;i<=10;i++){
+    //     cout<<n<<" X "<<i<<" = "<< n*i <<endl;
+    // }
+    
+    
+    //print the number 21-1
+    // for(int i=21;i>=1;i--){
+    //     cout<<i<<endl;
+    //}
+    
+    //find the num=4  and pow = 3  reult = 64;
+    
+    // int n;
+    // cout<<"Enter the num : ";
+    // cin>>n;
+    
+    // int power;
+    // cout<<"enter the power : ";
+    // cin>>power;
+    
+    // int result = n;
+    // for(int i=1;i<power; i++){
+    //      result=result*n;
+    // }
+    // cout<<n<<" power "<<power<<"  = "<<result;
+  
   //1--Print all Odd numbers from 1 to n, take n as an input from the user.
    /*
      int number;
