@@ -2,7 +2,8 @@
                                       Question List 
 
 
-  chapter-0  basic loop
+  chapter-0 
+  basic loop
 
 1-Print all Odd numbers from 1 to n, take n as an input from the user.
 2-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
@@ -14,7 +15,17 @@
 8-print the a-z char by using loop;
 9-table of any number by using loop;
 
-            
+    Advance loop
+1-swim or not;
+2-even and postive;
+3-check three number;
+4-take the input n check the even ;
+5-find factorial;
+6-print all the number which is not divisble by 3 and 5;
+7-check prime;
+
+
+
 
                             Pattern printing
 //question-1
@@ -64,14 +75,6 @@ Q-5 hollow rohmbus
 Q-5 butterfly
 
 
-    advance loop
-1-swim or not;
-2-even and postive;
-3-check three number;
-4-take the input n check the even ;
-5-find factorial;
-6-print all the number which is not divisble by 3 and 5;
-7-check prime;
 
 
  chapter -1  function
