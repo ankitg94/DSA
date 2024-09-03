@@ -36,8 +36,8 @@ int main() {
     // cout<<"enter the power : ";
     // cin>>power;
     
-    // int result = n;
-    // for(int i=1;i<power; i++){
+    // int result = 1;
+    // for(int i=1;i<=power; i++){
     //      result=result*n;
     // }
     // cout<<n<<" power "<<power<<"  = "<<result;
