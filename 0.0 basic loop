@@ -2,17 +2,16 @@
 #include <iostream>
 using namespace std;
 int main() {
-    // Write C++ code here
-    //cout<<"hello world";
+   
 
- // "print a to z"
+    //Q1- "print a to z"
     // for(char i='a';i<='z';i++){
     //     cout<<i<<endl;
     // }
     
     
     
-    //table of any number;
+    //Q2- table of any number;
     // int n;
     // cout<<"Enter the number : ";
     // cin>>n;
@@ -21,28 +20,13 @@ int main() {
     // }
     
     
-    //print the number 21-1
+    //Q3- print the number 21-1
     // for(int i=21;i>=1;i--){
     //     cout<<i<<endl;
     //}
     
-    //find the num=4  and pow = 3  reult = 64;
-    
-    // int n;
-    // cout<<"Enter the num : ";
-    // cin>>n;
-    
-    // int power;
-    // cout<<"enter the power : ";
-    // cin>>power;
-    
-    // int result = 1;
-    // for(int i=1;i<=power; i++){
-    //      result=result*n;
-    // }
-    // cout<<n<<" power "<<power<<"  = "<<result;
   
-  //1--Print all Odd numbers from 1 to n, take n as an input from the user.
+  //Q4 --Print all Odd numbers from 1 to n, take n as an input from the user.
    /*
      int number;
      cout<<"Enter the number:"<<endl;
@@ -54,7 +38,7 @@ int main() {
      }
      */
 /*
-//2-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
+//Q5-Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.
    int number;
    cout<<"Enter the number : ";
    cin>>number;
@@ -65,7 +49,7 @@ int main() {
    }
 */
 /*
-//3--find the number power given by the user like num=5,power=3,result=125
+//Q6--find the number power given by the user like num=5,power=3,result=125
 int n,power,num;
     cout<<"Enter the number :";
     cin>>n;
@@ -78,7 +62,7 @@ int n,power,num;
     cout<<"result"<<num;
 */
 /*
-    //4-sum of natural number;
+    //Q-7-sum of natural number;
     int n;
     cout<<"Enter the number : ";
     cin>>n;
@@ -88,7 +72,7 @@ int n,power,num;
     }
      cout<<num;
   */  
-//5-factorial
+//Q8-factorial
    /* int n;
     cout<<"Enter the number : ";
     cin>>n;
@@ -99,7 +83,7 @@ int n,power,num;
     cout<<fact;
    */
 
- //6 - prime number 
+ //Q9 - prime number 
   /*  int n;
     cout<<"Enter the number : ";
     cin>>n;
@@ -118,7 +102,7 @@ int n,power,num;
         cout<<"Prime number ";
     }
 */
-07- fabinocci number
+//Q10- fabinocci number
 
   int n;
     // Prompt the user for the number of terms
@@ -143,7 +127,7 @@ int n,power,num;
     cout << endl;
 
 
-    //Q-8 find the all prime from 1 to n;
+    //Q11- find the all prime from 1 to n;
     // int target;
     // cout<<"Enter the number: ";
     // cin>>target;
@@ -165,9 +149,16 @@ int n,power,num;
     //     }
 
 
-    
-   
+//Q12 -find all the number which is not divsible 3&&5
 
-
+int n;
+cout<<"Enter the number : ";
+cin>>n;
+for(int i=1; i<=n;i++){
+    if(i%3 !=0  && i%5 !=0){
+        cout<<"result : "<<i<<endl;
+        
+    }
+}
     return 0;
 }
