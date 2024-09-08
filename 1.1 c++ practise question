@@ -3,6 +3,15 @@
 #include<cmath>
 using namespace std;
 
+//multiply functiion
+int  multiply(int n){
+    for(int i=1;i<=10;i++){
+        int result = i*n;
+        cout<<n<<"x"<<i<<" = "<<result<<endl;
+     }
+        return 0 ;
+}
+
 // char convert(char name){
     
 //     char ans = name-'a'+'A' ;
@@ -31,7 +40,9 @@ int  armStrongnumber(int number,int digit){
 }
 
 int main() {
-    //ans-1
+   //ans-1
+   multiply(9);
+    //ans-2
     // char value;
     // cout<<"Enter the value";
     // cin>>value;
