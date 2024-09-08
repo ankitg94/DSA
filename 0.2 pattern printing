@@ -1,337 +1,427 @@
-// Online C++ compiler to run C++ program online
-#include <iostream>
-using namespace std;
-int main() {
-    //question-1
-    //square
-    
-    // for(int i=1;i<=5;i++){
-    //     for(int j=1;j<=5;j++){
-    //       cout<<"*";
-    //     }
-    //     cout<<endl;
-    // }
-    
-    /*
-    question-2
-    11111
-    22222
-    33333
-    44444*/
-    
-//     for(int i=1;i<=5;i++){
-//      for(int j=1;j<=5;j++){
-//             cout<<i;       
-//         }
-//         cout<<endl;
-//     }
-// 
-
-  /*
-  question-3
-  12345
-  12345
-  12345
-  */
-  
-//   for(int i =1;i<5;i++){
-//       for(int j=0;j<5;j++){
-//           cout<<j;
-//       }
-//       cout<<endl;
-//   }
-
-//question 4-reverse of question 3
-//  for(int i=1;i<=5;i++){
-//      for(int j=5;j>=1;j--){
-//          cout<<j;
-//      }
-//      cout<<endl;
-//  } 
- //question 5-square (reverse of question 3)
-//  for(int i=1;i<5;i++){
-//      for(int j=1;j<=5;j++){
-//          cout<<j*j<<" ";
-//      }
-//      cout<<endl;
-//  }
-  
- /*
- question-6 
- aaaaaa
- bbbbbb
- cccccc
- */
+// Online C++ compiler to run C++ program online 
+#include <iostream> 
+using namespace std; 
+int main() { 
+    int n; 
+    cout<<"Enter the number : "; 
+    cin>>n; 
  
-
-//  for(int i=0;i<=5;i++){
-//      char name = 'a'+i-1;
-//      for(int j=0;j<5;j++){
-//          cout<<name;
-//      }
-//      cout<<endl;
-//  }
-  
-//   for(int i=0;i<5;i++){
-//       for(char j='a';j<='e';j++){
-//           cout<<j;
-//       }
-//       cout<<endl;
-//   }
- 
- 
-//   for(char i='a';i<='e';i++){
-//       for(int j=1;j<5;j++){
-//           cout<<i;
-//       }
-//       cout<<endl;
-//   }
-  // 1-25
-  int sum = 0; 
-  for(int i=1;i<=5;i++){
-      for(int j=1;j<=5;j++){
-          cout<<sum<<" ";
-          sum++;
+    // square box 
+    cout<<endl; 
+    cout<<"Q1-Square box : "<<endl; 
+    cout<<endl; 
+     
+    for(int i=0;i<n;i++){ 
+        for(int j=0;j<n;j++){ 
+             cout<<"*"; 
+            //cout<<i; 
+            //cout<<j; 
+        } 
+        cout<<endl; 
+    } 
+     
+    //sum of number; 
+    cout<<endl; 
+    cout<<"Q 2- sum of num :"<<endl; 
+    cout<<endl; 
+     
+    int num=1; 
+    for(int i=0;i<n;i++){ 
+         for(int j=0;j<n;j++){ 
+             //  cout<<"*"; 
+          cout<<" "<<num; 
+            num++; 
+    } 
+         cout<<endl; 
+    } 
+     
+     
+    //trianlge; 
+    cout<<endl; 
+    cout<<"Q3-triangle : "<<endl; 
+    cout<<endl; 
+     
+    for(int i=1;i<=n;i++){ 
+        for(int j=1;j<i+1;j++){ 
+            //cout<<"*"; 
+            //cout<<i; 
+            cout<<j; 
+        } 
+        cout<<endl; 
+    } 
+     
+    //reverse of triangle 
+    cout<<endl; 
+    cout<<"Q4-reverse of triangle : "; 
+    cout<<endl; 
+     
+    for(int i=0;i<n;i++){ 
+        for(int j=i+1;j>=1;j--){ 
+            cout<<j<<" "; 
+        } 
+        cout<<endl; 
+    } 
+     
+    //Floyd triangle 
+    cout<<endl; 
+    cout<<"Q5-Floyd Triangle :"; 
+    cout<<endl; 
+    //int num=1; 
+    for(int i=1;i<=n;i++){ 
+        for(int j=1;j<i+1;j++){ 
+            cout<<" "<<num; 
+            num++; 
+        } 
+        cout<<endl; 
+    } 
+     
+    //space +triangle 
+    cout<<endl; 
+    cout<<"Q6 - space + triangle"; 
+    cout<<endl; 
+     
+    for(int i=1;i<n;i++){ 
+        for(int j=1;j<=i+1;j++){ 
+            cout<<"  "; 
+        } 
+        for(int j=i;j<n;j++){ 
+            cout<<i<<" "; 
+        } 
+        cout<<endl; 
+    } 
+     
+    //numerical pyramid inc +dec   
+    cout<<endl; 
+    cout<<"Q7 - numerical pyramid inc +dec "; 
+    cout<<endl; 
+    for(int i=1;i<=n;i++){ 
+        for(int j=n;j>=i;j--){ 
+            cout<<"  "; 
+        } 
+        for(int j=1;j<i+1;j++){ 
+            cout<<j<<" "; 
+        } 
+        for(int j=i-1;j>=1;j--){ 
+            cout<<j<<" "; 
+        } 
+        cout<<endl; 
+    } 
+    //pyramid 
+    cout<<endl; 
+    cout<<"Q 8- pyramid"; 
+    cout<<endl; 
+    for( int i=1;i<n;i++){ 
+        for(int j=i;j<n;j++){ 
+            cout<<" "; 
+        } 
+        for(int j=1;j<i+1;j++){ 
+            cout<<" *"; 
+        } 
+        cout<<endl; 
+    } 
+    //reverse pyramid 
+    cout<<endl; 
+    cout<<"Q9- reverse Pyramid "; 
+    cout<<endl; 
+    for(int i=1;i<=n;i++){ 
+        for(int j=1;j<i+1;j++){ 
+        cout<<" ";     
+        } 
+         for(int j=i;j<n;j++){ 
+             cout<<" *"; 
+         } 
+        cout<<endl; 
+    } 
+     
+    cout<<endl; 
+    cout<<"Q10 -dimond or rhombus"; 
+    cout<<endl; 
+    for(int i=1;i<n;i++){ 
+        for(int j=i;j<n;j++){ 
+            cout<<" "; 
+        } 
+        for(int j=1;j<i+1;j++){ 
+            cout<<" *"; 
+        } 
+        cout<<endl; 
+    } 
+    for(int i=1;i<n;i++){ 
+     for(int j=1;j<i+1;j++){ 
+         cout<<" "; 
+     } 
+      for(int j=i;j<n;j++){ 
+          cout<<" *"; 
+      } 
+      cout<<endl; 
+    }     
+     
+     
+     
+     
+  //hollow rohmbus 
+  cout<<endl; 
+  cout<<"Q11- hollow pyramid"<<endl; 
+  cout<<endl; 
+    
+  for(int i=1;i<n;i++){ 
+      for(int j=i;j<=n;j++){ 
+          cout<<" "; 
+      } 
+      cout<<"  *"; 
+      if(i!=1){ 
+          for(int j=2;j<i*2;j++){ 
+              cout<<" "; 
+          } 
+        cout<<"*"; 
+      } 
+      cout<<endl; 
+  } 
+  for(int i=1;i<n;i++){ 
+      for (int j=1;j<=i+1;j++){ 
+          cout<<" "; 
+      } 
+      cout<<" *"; 
+      if(i!=n-1){ 
+         for(int j=1;j<=2*(n-i-1);j++){ 
+             cout<<" "; 
+         }   
+         cout<<"*"; 
+      } 
+      cout<<endl; 
+  } 
+  //butterfly 
+  cout<<endl; 
+  cout<<"Q12 - butterfly"<<endl; 
+  cout<<endl; 
+    
+  for(int i=1;i<n;i++){ 
+  for(int j=1;j<i+1;j++){ 
+      cout<<" *"; 
+  }  
+  for(int j=1;j<=2*(n-i-1);j++){ 
+      cout<<"  "; 
+  } 
+  for(int j=1;j<i+1;j++){ 
+      cout<<" *"; 
+  } 
+  cout<<endl; 
+}    
+  for(int i=1;i<n;i++){ 
+      for(int j=i;j< n;j++){ 
+          cout<<" *"; 
+      } 
+      for(int j=1;j<=2*(i-1);j++){ 
+          cout<<"  "; 
+      } 
+      for(int j=i;j<n;j++){ 
+          cout<<" *"; 
+      } 
+       
+      cout<<endl; 
+  } 
+  //hour glass  
+  cout<<endl; 
+  cout<<"Q13- Hour glass "<<endl; 
+  cout<<endl; 
+  for(int i=0;i<=n;i++){ 
+      cout<<"* "; 
+  } 
+  cout<<endl; 
+  for(int i=0;i<n; i++){ 
+     if(i!=n){ 
+      for(int j=1;j<i+1;j++){ 
+        cout<<" "; 
+      } 
+      cout<<"*"; 
+     } 
+     if(i!=n-1){ 
+     for(int j=i;j<(2*(n-1))-i;j++){ 
+         cout<<" "; 
+     } 
+     cout<<"*"; 
+     } 
+      cout<<endl; 
+  } 
+  for(int i=0;i<n;i++){ 
+      for(int j=i;j<n;j++){ 
+          cout<<" "; 
+      } 
+      cout<<"*"; 
+      if(i!=0){ 
+      for(int j=1;j<2*i;j++){ 
+          cout<<" "; 
+      } 
+      cout<<"*"; 
+      } 
+      cout<<endl; 
+  } 
+  for(int i=0;i<=n;i++){ 
+      cout<<"* "; 
+  } 
+  cout<<endl; 
+  // hollow triangle 
+  cout<<endl; 
+  cout<<"Q14- Hollow triangle"; 
+  cout<<endl; 
+   
+   
+  int number=1;
+  for(int i=1;i<=n;i++){ 
+      for(int j=i;j<n;j++){ 
+          cout<<" "; 
+      } 
+      for(int j=1;j<=2*i-1;j++){
+          if(j==1 || j==2*i-1){
+              cout<<number<<" ";
+              number++;
+          }
+          else{
+              cout<<" ";
+          }
       }
       cout<<endl;
+  } 
+  for(int i=1;i<n;i++){
+      cout<<number<<" ";
+      number++;
   }
-    /*
-    *
-    **
-    ***
-    ****
-    
-    */
-    
-    // for(int i=1;i<5;i++){
-    //     for(int j=1;j<=i;j++){
-    //         cout<<"*";
-    //     }
-    //     cout<<endl;
-    // }
-    //question-2
-    
-    // for(int i=1;i<=5;i++){
-    //     for(int j=1;j<=i;j++){
-    //         cout<<j;
-    //     }
-    //     cout<<endl;
-    // }
-    //question-3
-    
-    // for(int i=1;i<=5;i++){
-    //     for(int j=1;j<=i;j++){
-    //         cout<<i;
-    //     }
-    //     cout<<endl;
-    // }
-    
-    //qustion-4 reverse of question-2
-/*
-    for(int i=0;i<=5;i++){
-        for(int j=i;j>=1;j--){
-            cout<<j;
-        }
-        cout<<endl;
-    }*/
-    
-    //question-5 
-    // a
-    // bb
-    // ccc
-    
-    // for(int i=1;i<=5;i++){
-    //     char name='a'+i-1;
-    //     for(int j=1;j<=i;j++){
-    //         cout<<name;
-    //     }
-    //     cout<<endl;
-    // }
-    
-    //question - 6 reverse of question-1
-    /*for(int i=1;i<=5;i++){
-        for(int j=1;j<=5-(i-1);j++){
-            cout<<"*";
-        }
-        cout<<endl;
-    }*/
-
-
-// question-7
-// for(int i=1;i<=5;i++){
-//     for(int j=1;j<5-(i-1);j++){
-//         cout<<j;
-//     }
-//     cout<<endl;
-// }
-
-//question-8
-for(int i=1;i<=5;i++){
-    for(int j=5; j>=5-i+1;j--){
-        cout<<j;
-    }
-    cout<<endl;
-}
-
-/*   
-
-for(int row=1;row<=5;row++){
-    for(int col=1;col<=5-row;col++){
-        cout<<"  ";
-    }
-    for(int col=1;col<=row;col++){
-        cout<<"* ";
-    }
-    cout<<endl;
-}
-*/
-
-// for(int row=1;row<=5;row++){
-//     for(int col=1;col<=5-row;col++){
-//         cout<<"  ";
-//     }
-//     for(int col = 1; col <= row; col++){
-//         cout<<row<<" ";
-//     }
-//     cout<<endl;
-// }
-
-
-
-// for(int row=1;row<=5;row++){
-//     for(int col=1;col<=5-row;col++){
-//         cout<<" ";
-//     }
-//     for(int col=1;col <=row;col++){
-//         cout<<col;
-//     }
-//     cout<<endl;
-// }
-
-// for(int i=0;i<=5;i++){
-//     for(int j=0;j<=5-i;j++){
-//         cout<<" ";
-//     }
-//     for(char j='a';j<='a'+i-1;j++){
-//         cout<<j<<"";
-//     }
-//     cout<<endl;
-// }
-
- //advance pattern
-    //Q1-pyramid 
-    
-    // for(int i=0;i<=5;i++){
-    //     for(int j=1;j<=5-i;j++){
-    //         cout<<"  ";
-    //     }
-    //     for(int j =1;j<=2*i-1;j++){
-    //         cout<<"* ";
-    //     }
-    //     cout<<endl;
-    // }
-    //Q-2 numerical pyramid
-    int n;
-    cout<<"Enter the number : ";
-    cin>>n;
-    
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<=5-i;j++){
-    //         cout<<" ";
-    //     }
-    //     for(int j=1;j<2*i-1;j++){
-    //         cout<<j<<" ";
-    //     }
-    //     cout<<endl;
-    // }
-    
-    //Q-3 palindrome pyramid
-    
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<n-i;j++){
-    //         cout<<" ";
-    //     }
-    //     for(int j=1;j<=i;j++){
-    //         cout<<j;
-    //     }
-    //     for(int j=i-1;j>=1;j--){
-    //         cout<<j;
-    //     }
-    //    cout<<endl;
-    //}
-    
-    //Q-4 reverse pyramid -- (Q1) 
-    
-    // for(int i=0;i<=n;i++){
-    //     for(int j=1;j<=i;j++){
-    //         cout<<" ";
-    //     }
-    //     for(int j=1;j<=n-i;j++){
-    //         cout<<"* ";
-    //     }
-    //     cout<<endl;
-    // }
-    
-    //Q-5 hollow rohmbus
-    
-    // for(int i=1;i<=n;i++){
-    //     for(int j=1;j<=n-i;j++){
-    //         cout<<"*";
-    //     }
-    //     for(int j=1;j<2*i;j++){
-    //         cout<<" ";
-    //     }
-    //     for(int j=1;j<=n-i;j++){
-    //         cout<<"*";
-    //     }
-    //     cout<<endl;
-    // }
-    // for(int i=1;i<=n-1;i++){
-    //     for(int j=1;j<=i;j++){
-    //         cout<<"*";
-    //     }
-    //     for(int j=2*n-2*i;j>=1;j--){
-    //         cout<<" ";
-    //     }
-    //     for(int j=1;j<=i;j++){
-    //         cout<<"*";
-    //     }
-    //     cout<<endl;
-    // }
-    //Q-5 butterfly 
-    
-    for(int i=1;i<n;i++){
-        for(int j=1;j<=i;j++){
-            cout<<"*";
-        }
-        for(int j=1;j<=2*n-2*i;j++){
-            cout<<" ";
-        }
-        for(int j=1;j<=i;j++){
-            cout<<"*";
-        }
-        cout<<endl;
-    }
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=n-i;j++){
-            cout<<"*";
-        }
-        for(int j=1;j<=2*i-1;j++){
-            cout<<" ";
-        }
-        for(int j=n-i;j>=1;j--){
-            cout<<"*";
-        }
-        cout<<endl;
-    }
-
-
-
-
-
-
-
   
-      return 0;
- }
+  //alphabet series 
+  cout<<endl;
+  cout<<"Q15- Alphabet -A"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     
+      for(int j=1;j<=n;j++){
+      if(i==1 || i==(n/2+1) ||j==1 || j==n){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+      }
+       cout<<endl;
+  }
+  
+  cout<<endl;
+  cout<<"Alphabet -B"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     
+      for(int j=1;j<=n;j++){
+      if(i==1 || i==(n/2+1) ||i==n ||j==1 || j==n){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+      }
+       cout<<endl;
+  }
+  cout<<endl;
+  cout<<"Alphabet -c"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     
+      for(int j=1;j<=n;j++){
+      if(i==1  ||i==n ||j==1 ){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+      }
+       cout<<endl;
+  }
+  
+  cout<<endl;
+  cout<<"Alphabet-D"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     
+      for(int j=1;j<=n;j++){
+      if(i==1  ||i==n ||j==1 || j==n){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+      }
+       cout<<endl;
+  }
+  
+  
+  cout<<endl;
+  cout<<"Alphabet -E"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     cout<<"*";
+      for(int j=1;j<=n;j++){
+      if(i==1 || i==n || i==(n/2)+1){
+          cout<<"*";
+      }
+       }
+      cout<<endl;
+  }
+   
  
+ 
+  cout<<endl;
+  cout<<"Alphabet-f"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+     cout<<"*";
+      for(int j=1;j<=n;j++){
+      if(i==1  || i==(n/2)+1){
+          cout<<"*";
+      }
+       }
+      cout<<endl;
+  }
+   
+  cout<<endl;
+  cout<<"Alphabet-H"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+      for(int j=1;j<=n;j++){
+      if(i==(n/2)+1||j==1 || j==n){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+       }
+      cout<<endl;
+  }
+   
+   cout<<endl;
+  cout<<"Alphabet-I"<<endl;
+  cout<<endl;
+  
+  for(int i=1;i<=n;i++){
+      for(int j=1;j<=n;j++){
+      if(i==1||i==n || j==n/2){
+          cout<<"*";
+      }
+      else{
+          cout<<" ";
+      }
+       }
+      cout<<endl;
+  }
+    
+    
+     cout<<endl;
+  
+   
+   
+   
+    return 0; 
+} 
