@@ -29,54 +29,25 @@
 
 
                                          Pattern printing
-
-
-//question-1
-//square
-
-/*
-question-2
-11111
-22222
-33333
-44444*/
-
-
-/*
-question-3
-12345
-12345
-12345
-*/
-
-//question 4-reverse of question 3
-//question 5-square (reverse of question 3)
-/*
-question-6
-aaaaaa
-bbbbbb
-cccccc
-*/
+Q1- square box;
+Q2- sum of num;
+Q3-triangle;
+Q4- reverse triangle;
+Q5-Floyd triangle;
+Q6-space triangle;
+Q7-numerical pyramid;
+Q8-pyramid;
+Q9-reverse pyramid;
+Q10-dimond ;
+Q11-hollow dimond;
+Q12-butterfly ;
+Q13-hourGlass;
+Q14-hollow triangle;
+Q15-alphabet;
 
 
 
-/*
-*
-**
-***
-****
-
-*/
-
-   advance pattern
-
-Q-1pyramid
-Q-2 numerical pyramid
-Q-3 palindrome pyramid
-Q-4 reverse pyramid -- (Q1)
-Q-5 hollow rohmbus
-Q-5 butterfly
-
+ 
 
 
 
