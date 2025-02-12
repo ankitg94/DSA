@@ -1,13 +1,90 @@
 Time and space complexity are ways to measure how efficient an algorithm is.
 
 1-Time Complexity → How much time an algorithm takes to run (based on the number of operations).
-2-Space Complexity → How much memory an algorithm uses (based on the variables and data structures).
+
 
 1. Time Complexity (How Fast is the Algorithm?)
 Time complexity tells us how the number of operations increases as the input size grows.
+Common Time Complexities
+Notation	ComplexityType	      Example
+O(1)	      Constant             Accessing an array element
+O(log n) 	  Logarithmic	         Binary Search
+O(n)	      Linear	             Looping through an array
+O(n log n)	Log-linear	         Merge Sort, Quick Sort
+O(n²)	      Quadratic	           Nested loops (e.g., Bubble Sort)
+O(2ⁿ)	      Exponential	         Recursive Fibonacci
 
 Imagine you have a list of n numbers and you need to find if a number exists in the list.
 Example 1: Checking Each Number One by One (Linear Search)
 If the list has 10 numbers, the worst case takes 10 steps.
 If the list has 1,000 numbers, the worst case takes 1,000 steps.
 This is called O(n) (Linear Time Complexity) because time grows proportionally to n.
+
+function findNumber(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) return true;
+  }
+  return false;
+}
+
+
+Example 2: Dividing the Problem in Half (Binary Search)
+function binarySearch(arr, target) {
+  let left = 0, right = arr.length - 1;
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (arr[mid] === target) return true;
+    if (arr[mid] < target) left = mid + 1;
+    else right = mid - 1;
+  }
+  return false;
+}
+If the list has 10 numbers, worst case takes 4 steps.
+If the list has 1,000 numbers, worst case takes 10 steps.
+This is O(log n) (Logarithmic Time Complexity) because the problem size is divided by 2 in each step.
+
+
+
+
+
+
+2-Space Complexity → How much memory an algorithm uses (based on the variables and data structures).
+
+Example 1: Using No Extra Space
+function sumArray(arr) {
+  let sum = 0; // Only one extra variable
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+Uses O(1) space (constant space) because it only stores sum.
+Example 2: Storing Extra Data (New Array)
+function doubleArray(arr) {
+  let newArr = []; // Creating a new array
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr[i] * 2);
+  }
+  return newArr;
+} 
+
+When you have nested loops, the time complexity is O(n²).
+
+Example 3 :Printing All Pairs in an Array
+function printPairs(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      console.log(arr[i], arr[j]);
+    }
+  }
+}
+If arr has 5 elements → 5 × 5 = 25 operations.
+If arr has 1000 elements → 1000 × 1000 = 1,000,000 operations.
+Time Complexity: O(n²) → If n doubles, time quadruples.
+Uses O(n) space because it creates a new array of the same size as input.
+
+Common Space Complexities
+Notation	Complexity Type	     Example
+O(1)	    Constant	          Single variable
+O(n)	    Linear	            Storing extra array
+O(n²)   	Quadratic   	      2D Matrix (nested loops)
