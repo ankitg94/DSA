@@ -110,5 +110,34 @@ int main() {
      mul*=2;
  }
  cout<<ans;
+
+
+
+// check power of any number 
+
+
+ int checkPowerofAny(int n,int k){
+      int count=0;
+   for(int i=k;i<=n;i=(i*k)){
+           count++;
+       if(i==n){
+           cout<<i<<" is the "<<count<<" power of "<<k;
+           return 1;
+       }
+   }
+   cout<<n<<" is not the power of "<<k;
+   return -1;
+   }
  
+int main() {
+   int n,k;
+   cout<<"Enter the num : ";
+   cin>>n;
+   cout<<"Enter the base : ";
+   cin>>k;
+   checkPowerofAny(n,k);
+ 
+
+    return 0;
+}
  
