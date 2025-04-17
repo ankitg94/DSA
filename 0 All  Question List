@@ -61,6 +61,9 @@ Q15-alphabet;
 7-exact squareRoot ;
 8-palindrome check;
 9-complement of the number;
+10-check power of anyNumber;
+
+
 
   chapter-2 sorting 
 1-bubble sort; 
