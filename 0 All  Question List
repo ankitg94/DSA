@@ -79,7 +79,8 @@ Q15-alphabet;
 6-second max;
 7-missing number ;
 8-fibbonacci series;
-
+9-right upto k rotation;
+10-left upto k rotation;
 
  chapter-4 binary search
  1-binary search ;
