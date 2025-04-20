@@ -71,12 +71,14 @@ Q15-alphabet;
 3-insertion sort;
 
   chapter-3 array
-0-find min,max,sum of totalelement of array;
-1-linaer search;
-2-reverse the array;
-3-second max;
-4-missing number ;
-5-fibbonacci series;
+1-find min total element of array;
+2-max total element of array,
+3-sum of total element of array, 
+4-linaer search;
+5-reverse the array (new,old);
+6-second max;
+7-missing number ;
+8-fibbonacci series;
 
 
  chapter-4 binary search
