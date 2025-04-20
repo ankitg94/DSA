@@ -14,6 +14,7 @@ for(int i=0;i<7;i++){
     }
 }
 cout<<"min :"<<ans;
+
 //find the max
 int arr[8]={10,20,30,40,5,8,3,9};    
 int ans =INT_MIN;//min
@@ -25,6 +26,14 @@ for(int i=0;i<7;i++){
     }
 }
 cout<<"MAX :"<<ans;
+//find the sum total element of array; 
+int arr[8]={10,20,30,40,5,8,3,9};    
+int ans =0;
+
+for(int i=0;i<=7;i++){
+    ans =ans+arr[i];
+}
+cout<<"total : "<<ans;
     
     // int n;
     // cout<<"enter the number : ";
