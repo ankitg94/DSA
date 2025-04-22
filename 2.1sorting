@@ -37,7 +37,21 @@ for(int i=1;i<n;i++){
 for(int i=0;i<n;i++){
     cout<<arr[i]<<" ";
 }
-  
+//slection sort
+int arr[6] = {10, 5, 6, 40, 20, 3};
+
+for (int i = 0; i < 5; i++) {
+    int minIndex = i;
+
+    for (int j = i + 1; j < 6; j++) {
+        if (arr[j] < arr[minIndex]) {
+            minIndex = j;
+        }
+    }
+
+    // Swap the smallest with the current position
+    swap(arr[i], arr[minIndex]);
+}
 
     return 0;
 }
