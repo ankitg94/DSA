@@ -39,5 +39,31 @@ int main() {
 //      cout<<"c is greatest : "<<c;
 //  }
 
+//question-4 ?
+//if 15/fizbuzz,fizz/5,buzz/3 count how many number given here ,
+    int countfizbuz=0;
+    int buzz=0;
+    int fizz=0;
+for (int i=1;i<=50;i++){
+   if(i%15==0){
+       cout<<"fizzbuzz"<<i<<",";
+        countfizbuz++; 
+        cout<<endl;
+   }else if(i%5==0){
+       cout<<"fizz"<<","<<i;
+       fizz++;
+       cout<<endl;
+   } 
+   else if(i%3==0){
+       cout<<"buzz"<<","<<i;
+       buzz++;
+       cout<<endl;
+   }
+}
+cout<<"total"<<endl;
+cout<<"fizbuzz : "<<countfizbuz<<endl;
+cout<<"fizz : "<<fizz<<endl;
+cout<<"buzz : "<<buzz<<endl;
+
  return 0;
 }
