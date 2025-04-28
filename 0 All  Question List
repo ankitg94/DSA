@@ -82,6 +82,9 @@ Q15-alphabet;
 8-fibbonacci series;
 9-right upto k rotation;
 10-left upto k rotation;
+11- find duplicate;
+12- remove duplicate;
+13- frequency of duplicate;
 
  chapter-4 binary search
  1-binary search ;
