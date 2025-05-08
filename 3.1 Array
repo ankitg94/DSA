@@ -191,6 +191,30 @@ for(int i=0;i<arr.size();i++){
     for (int num : ans) {
         cout << num << " ";
     }
+
+
+//DSA Interview Question: Random Turn-Based Number Selection
+    vector<int> arr = {1,4,5,6};
+     srand(time(0));
+   int n = arr.size(); 
+   int player1 =0;
+   int player2 =0; 
+   
+   for(int i=0;i<n;++i){
+       int picked =rand()%arr.size();
+       int filled =arr[picked];
+      
+       if(i%2==0){
+           player1 +=filled;
+       }else{
+           player2 +=filled;
+       }
+        arr.erase(arr.begin() + picked);
+   }
+cout<<"player1 "<<player1;
+cout<<endl;
+cout<<"player2 "<<player2;
+
     
 
  
