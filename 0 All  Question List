@@ -91,3 +91,4 @@ Q15-alphabet;
  1-binary search ;
  2-binary search with index ;
  3-first & last occurence via  binary search in array ;
+ 4-best place for this vlaue in the index
