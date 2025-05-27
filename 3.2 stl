@@ -1,1 +1,51 @@
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main() {
+    //1- move o start and 1 end  
+    int arr[6]={5,7,9,1,0,1};
+    int start=0;
+    int end=5;
+    int key 7;
+    while(start<end){
+        if(arr[start]==0){
+            start++;
+        }else{
+            if(arr[end]==0){
+                arr[start]+arr[end]==key;
+            }else{
+                end--;
+            }
+        }
+    }
+    cout<<"start"<<start;
+    cout<<"end"<<end;
+    for(int i=0;i<=5;i++){
+        cout<<arr[i];
+    }
+    //2-two sum 
+    
+    //  vector<int> twoSum(vector<int>& numbers, int target) {
+    //     int start=0;
+    //     int end =numbers.size()-1;
+    //     vector <int>ans;
+    //     while(start<end){
+    //         if(numbers[start]+numbers[end]==target){
+    //             ans.push_back(start+1);
+    //             ans.push_back(end+1);
+    //             return ans;
+    //         }if(numbers[start]+numbers[end]>target){
+    //           end--;
+    //         }else{
+    //             start++;
+    //         }
 
+    //         }
+    //         return ans;
+    //     }
+        
+        
+   
+
+    return 0;
+}
