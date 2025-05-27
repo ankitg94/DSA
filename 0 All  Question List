@@ -86,6 +86,10 @@ Q15-alphabet;
 12- remove duplicate;
 13- frequency of duplicate;
 14- Random Turn-Based Number Selection
+topic  two pointer approach
+1-move o to start and 1 to end
+2-pair Sum
+3-pair difference
 
  chapter-4 binary search
  1-binary search ;
