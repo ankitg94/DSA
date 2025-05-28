@@ -90,7 +90,8 @@ topic  two pointer approach
 1-move o to start and 1 to end
 2-pair Sum
 3-pair difference
-
+4-Array into 2 equal Sum Subarray
+5-kandane algo
  chapter-4 binary search
  1-binary search ;
  2-binary search with index ;
