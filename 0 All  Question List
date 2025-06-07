@@ -72,6 +72,7 @@ Q15-alphabet;
 3-insertion sort;
 
   chapter-3 array
+
 1-find min total element of array;
 2-max total element of array,
 3-sum of total element of array, 
@@ -82,17 +83,23 @@ Q15-alphabet;
 8-fibbonacci series;
 9-right upto k rotation;
 10-left upto k rotation;
-11- find duplicate;
-12- remove duplicate;
-13- frequency of duplicate;
-14- Random Turn-Based Number Selection
+11-find duplicate;
+12-remove duplicate;
+13-frequency of duplicate;
+14-Random Turn-Based Number Selection
 topic  two pointer approach
 1-move o to start and 1 to end
 2-pair Sum
 3-pair difference
 4-Array into 2 equal Sum Subarray
 5-kandane algo
+
+
+
+
+
  chapter-4 binary search
+
  1-binary search ;
  2-binary search with index ;
  3-first & last occurence via  binary search in array ;
@@ -100,4 +107,4 @@ topic  two pointer approach
  5-Search in a Rotated Array ;
  6-Peak index in a Mountain Array ;
  7- Kth Missing Positive Number ;
-lect[25-26] most important binary Search pending 
+ lect[25-26] most important binary Search pending 
