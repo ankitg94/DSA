@@ -338,3 +338,28 @@ while(start<end){
     
     return 0 ;
 }
+// vip question kandane algorithem (max sum of subarray);
+
+#include <iostream>
+#include<vector>
+#include <climits>
+#include <algorithm> // for std::max
+using namespace std;
+
+int main() {
+    vector<int> arr = {1, 2, 5, 6, 8, -4, -9};
+    long long maxi = INT_MIN;
+    int prefix = 0;
+
+    for (int i = 0; i < arr.size(); i++) {
+        prefix += arr[i];
+        maxi = std::max((long long)prefix, maxi); // ✅ cast prefix to long long
+        if (prefix < 0) {
+            prefix = 0;
+        }
+    }
+
+    cout << "Maximum subarray sum is: " << maxi << endl;
+
+    return 0;
+}
