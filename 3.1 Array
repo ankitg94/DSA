@@ -316,7 +316,21 @@ while(start<end){
      for(int i=0;i<prefix.size();i++){
          cout<<prefix[i]<<",";
      }
+
+    //suffix sum
+    vector<int>arr={1,4,8,9,12,-4};
+    vector<int>prefix;
+    int l=arr.size()-1;
+    vector<int>suffix(l);
     
+    suffix[l]=arr[l];
+    
+    for(int i=arr.size()-2;i>=0;i--){
+          suffix[i]=arr[i]+suffix[i+1];
+    }
+     for(int i=0;i<arr.size();i++){
+         cout<<suffix[i]<<",";
+     }
     
     
     
