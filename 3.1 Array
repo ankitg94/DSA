@@ -303,7 +303,19 @@ while(start<end){
         }
     }
 
- 
+   //prefix sum;
+    vector<int>arr={1,4,8,9,12,-4};
+    vector<int>prefix;
+    // cout<<arr.size();
+    prefix.push_back(arr[0]);
+    // cout<<prefix[0];
+    for(int i=1;i<arr.size();i++){
+          prefix.push_back(prefix[i-1]+arr[i]);
+    }
+    //  cout<<prefix.size();
+     for(int i=0;i<prefix.size();i++){
+         cout<<prefix[i]<<",";
+     }
     
     
     
