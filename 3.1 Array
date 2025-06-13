@@ -361,5 +361,43 @@ int main() {
 
     cout << "Maximum subarray sum is: " << maxi << endl;
 
+    //question 21 find duplicate o(n2);
+    //  vector<int>arr={1, 8, 4 ,3, 6 ,9, 5, 7 ,2, 7 ,0};
+    //   int l=arr.size();
+    //   vector<int>arr2;
+    //   vector<int>result;
+    //   for(int i=0;i<l;i++){
+    //       arr2.push_back(arr[i]);
+    //   }
+    //   for(int i=0;i<l;i++){
+    //       bool isalready=false;
+    //       for(int j=i+1;j<l;j++){
+    //           if(arr[i]==arr2[j]){
+    //               isalready=true;
+    //               break;
+    //           }
+    //       }
+    //       if(isalready){
+    //               result.push_back(arr[i]);
+    //       }
+    //   }
+    //   for(int i=0;i<result.size();i++){
+    //       cout<<"res"<<result[i]<<endl;
+    //   }
+    
+      //best approch
+      int n=arr.size();
+      
+      vector<int>freq(1+n,0);
+      vector<int>result;
+      for(int i=0;i<n;i++){
+         freq[arr[i]]++;
+      }
+      for (int i = 1; i <= n; i++) {
+    if (freq[i] > 1) {
+        result.push_back(i);  // duplicate found
+    }
+}
+
     return 0;
 }
