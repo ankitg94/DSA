@@ -34,6 +34,29 @@ int main() {
         }
     }
     cout<<"total"<<count+odd;
+
+  //sort the sentence
+  string s ="this2 is1 ";
+  int l =s.size();
+  string word="";
+  string words[10];
+  for(int i=0;i<l;i++){
+      
+  if(isalpha(s[i])){
+      word +=s[i];
+  }   
+  else if(isdigit(s[i])){
+      int num =s[i]-'0';
+      words[num]=word;
+      word="";
+  }
+ }
+  // Print words in order
+    for (int i = 0; i < 10; i++) {
+        if (words[i] != "") {
+            cout << words[i] << " ";
+        }
+    }
     
     
     return 0;
