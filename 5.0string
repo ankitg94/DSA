@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 int main() {
-    
+    question 2
     cout<<" longest palindrome";
     vector<int>lower(26,0);
     vector<int>upper(26,0);
@@ -35,7 +35,7 @@ int main() {
     }
     cout<<"total"<<count+odd;
 
-  //sort the sentence
+  //question 3 sort the sentence
   string s ="this2 is1 ";
   int l =s.size();
   string word="";
@@ -55,6 +55,45 @@ int main() {
     for (int i = 0; i < 10; i++) {
         if (words[i] != "") {
             cout << words[i] << " ";
+        }
+    }
+//question-04 clockwise rotation or anticlockwise same or different
+//   string s1="amazon";
+//   int l=s1.size();
+//   /*int last  = s1[0];
+//   int last2 = s1[1];
+//   for(int i=0;i<l;i++){
+//       s1[i]=s1[i+2];
+//   }
+//   s1[l-1]=last;
+//   s1[l-2]=last2;*/
+//   int last =s1[l-1];
+//   int last2=s1[l-2];
+//   for(int i=0;i<l;i++){
+//       s1[l-1-i]=s1[l-3-i];
+//   }
+//   s1[0]=last;
+//   s1[1]=last2;
+//   cout<<"string 1 = "<<s1<<endl;
+
+//question 05-pangram
+
+string s="ankit is a good boy";
+vector<int> lower(26,0);
+for(int i=0;i<s.size();i++){
+    if(s[i]>='a'){
+       lower[s[i]-'a']++;
+
+        
+    }
+}
+for(int i=0;i<lower.size();i++){
+    cout<<lower[i]<<endl;
+}
+//   // Print frequencies
+    for (int i = 0; i < 26; i++) {
+        if (lower[i] > 0) {
+            cout << char('a' + i) << ": " << lower[i] << endl;
         }
     }
     
