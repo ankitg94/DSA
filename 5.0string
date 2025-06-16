@@ -93,7 +93,28 @@ for(int i=0;i<lower.size();i++){
     }
     // cout<<char('a'+i)<<"="<<lower[i]<<endl;
 }
-cout<<"paragram";    
+cout<<"paragram";  
+
+//question-6 sorted string
+string s="thequickbrownfoxjumpsoverthelazydog";
+vector<int>lower(26,0);
+string sortedString="";
+for(int i=0;i<s.size();i++){
+    if(s[i]>='a'){
+        //  cout<<s[i]<<endl;
+        lower[s[i]-'a']++;
+    }
+}
+for(int i=0;i<lower.size();i++){
+   
+    //  cout<<char('a'+i)<<"="<<lower[i]<<endl;
+    while(lower[i]){
+     sortedString +=char('a'+i);
+     lower[i]--;
+    }
+}
+cout<<"sorted String = "<<sortedString;
+
     
     return 0;
 }
