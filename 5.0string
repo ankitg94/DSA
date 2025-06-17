@@ -141,6 +141,32 @@ string s="lEetcOde";
 
 cout<<"vowels"<<vowels<<endl;
 cout<<"str = "<<s;
+
+// question-8 add the string 
+string s1="12349";
+string s2="124";
+
+string result="";
+int length1 =s1.length();
+int length2 =s2.length();
+if(length1>length2){
+    s2 =string(length1-length2,'0')+s2;
+}else{
+    s1=string(length2-length1,'0')+s1;
+}
+int carry=0;
+for(int i = s1.size() - 1; i >= 0; i--){
+    int digit1 =s1[i]-'0';
+    int digit2 =s2[i]-'0';
+    
+    int sum =digit1+digit2+carry;
+    carry =sum/10;
+    result +=(sum%10+'0');
+}
+ if (carry)
+        result += (carry + '0');
+reverse(result.begin(), result.end());
+cout<<"result"<<result;
     
     return 0;
 }
