@@ -115,28 +115,32 @@ for(int i=0;i<lower.size();i++){
 }
 cout<<"sorted String = "<<sortedString;
 
-//question 07-sort the vowel 
-string str="hello worlda";
-string vowel;
+//question 07-sort the vowel
 
-for(int i=0;i<str.size();i++){
-    if(str[i]=='a'||str[i]=='i'||str[i]=='e'||str[i]=='o'||str[i]=='u'){
-        vowel +=str[i];
+//sort the vowel 
+string s="lEetcOde";
+
+  string vowels;
+        for(int i=0;i<s.size();i++){
+            if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'){
+                vowels+=s[i];
+            }
+             if(s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'){
+                vowels+=s[i];
+            }
+        }
+        sort(vowels.begin(),vowels.end());
         
-    }
-}
-sort(vowel.begin(),vowel.end());
-cout<<"vowel = "<<vowel<<endl;
-cout<<"str before = "<<str<<endl;
-int index=0;
-for(int i=0;i<str.size();i++){
-    if(str[i]=='a'||str[i]=='i'||str[i]=='e'||str[i]=='o'||str[i]=='u'){
-         str[i]=vowel[index++];
-        // cout<<"str i= "<<str[i]<<" vowel i = "<<vowel[index++]<<endl;
-        
-    }
-}
-cout<<"str = "<<str;
+        int index=0;
+        for(int i=0;i<s.size();i++){
+             if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u'|| s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'){
+                s[i]=vowels[index++];
+            }
+             
+        }
+
+cout<<"vowels"<<vowels<<endl;
+cout<<"str = "<<s;
     
     return 0;
 }
