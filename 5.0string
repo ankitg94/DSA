@@ -170,3 +170,82 @@ cout<<"result"<<result;
     
     return 0;
 }
+
+question 9-10 roman to integer
+#include<iostream>
+#include<algorithm>
+#include<string>
+using namespace std;
+#include <stdlib.h>
+// int num(char s){
+//     if(s=='I'){
+//         return 1;
+//     }else if(s=='V'){
+//         return 5;
+//     }else if(s=='X'){
+//         return 10;
+//     }else if(s=='L'){
+//         return 50;
+//     }else if(s=='C'){
+//         return 100;
+//     }else if(s=='D'){
+//         return 500; 
+//     }else if(s=='M'){
+//         return 1000;
+//     }
+//     return 0;
+// }
+
+char num2(int n){
+    if(n==1000){
+        return 'M';
+    }
+    if(n==500){
+        return 'D';
+    }
+    if(n==100){
+        return 'C';
+    }if(n==50){
+        return 'L';
+    }
+return 0;
+}
+
+int main() {
+    //roman to integer;
+    // string s="CD";
+    // int l=s.length();
+    // int sum=0;
+    // for(int i=0;i<l;i++){
+    //     cout<<"SI"<<s[i]<<endl;
+    //     //  cout<<"num"<<num(s);
+    //  if(num(s[i]) < num(s[i+1])){
+    //          sum -=num(s[i]);
+    //      }else{
+    //          sum +=num(s[i]); 
+    //      }
+    // }
+    // cout<<"sum"<<sum;
+    
+    // integer to roman
+    string n2r="1050";
+    int sum=0;
+    int mutli=1;
+    string roman="";
+    int l= n2r.length();
+    for(int i=l-1;i>=0;i--){
+    int digit=n2r[i]-'0';
+    int value= digit*mutli;
+    sum +=value;
+    mutli *=10;
+    
+    cout<<"sum"<<sum<<endl;
+    char rom =num2(value);
+    if(rom!=0){
+        roman =rom+roman;
+    }
+    }
+    cout<<"sum"<<sum;
+    cout<<"roman"<<roman;
+    return 0;
+}
