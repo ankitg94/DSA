@@ -384,6 +384,22 @@ int main() {
        }
       cout<<endl;
   }
+cout<<"alpha bet G";
+ for(int i=1;i<=n;i++){
+       for(int j=1;j<=n;j++){
+           if(i == 1 || i == n || j == 1 ||
+              (i == n/2 && j >= n/2) 
+              ||(j == n && i >= n/2 )
+             )
+             {
+               cout<<"*";
+           }else{
+               cout<<" ";
+           }
+       }
+       cout<<endl;
+   }
+
    
   cout<<endl;
   cout<<"Alphabet-H"<<endl;
