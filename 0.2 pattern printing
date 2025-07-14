@@ -476,6 +476,136 @@ cout<<"alphabet m"
             }
         }cout<<endl;
     }
+    // cout<<"alphabet O"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==1 ||  j==n || i==1 || i==n){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet p"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==1 ||  i==n/2 || i==1 ||(j==n && i<n/2)){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet q"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(i==1 ||  i==n || j==n || j==1 || j==i){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet R"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(i==1||i==n/2 || j==1 || 
+    //         (j==n && i<n/2) ||
+    //         (j>=n/2-1 && j==i-2)
+    //         ){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet S"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(i==1||i==n/2|| i==n || 
+    //         (j==n && i>n/2) ||
+    //         (j==1 && i<n/2)
+    //         ){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet T"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(i==1 ||  j==n/2
+            
+    //         ){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet U"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==1||i==n ||j==n){
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet v"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //       if((i<n/2 && j==i)||(i<n/2 && j==n-i+1) )
+    //       {
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet w"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==1||j==n || (i>n/2 && j==i) || (i>n/2 && j==n-i+1))
+    //         {
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    // cout<<"alphabet x"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==i||j==n-i+1) {
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    //  cout<<"alphabet Y"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==n-i+1 || (j<n/2 && j==i) ) {
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
+    //  cout<<"alphabet z"<<endl;
+    // for(int i=1;i<=n;i++){
+    //     for(int j=1;j<=n;j++){
+    //         if(j==n-i+1|| i==1|| i==n) {
+    //             cout<<"*";
+    //         }else{
+    //             cout<<" ";
+    //         }
+    //     }cout<<endl;
+    // }
   //q-16 electroinc digit;
  for(int i=1;i<=n;i++){
      for(int j=1;j<=n;j++){
