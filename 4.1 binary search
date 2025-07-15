@@ -243,5 +243,41 @@ int main() {
     cout<<"total occurance : "<<last-first+1;
     
     return 0;
+} 
+
+       question -7 
+     missing element of the array 
+
+#include <iostream>
+#include<vector>
+using namespace std;
+bool binarySearch(vector<int>arr ,int i){
+    int start=0;
+    int end=arr.size()-1;
+    while(start<=end){
+        int mid=start+(end-start)/2;
+        if(arr[mid] ==i){
+            return true;
+        }else if(arr[mid]<i){
+            start=mid+1;
+        }else{
+            end=mid-1;
+        }
+    }
+    return false;
+}
+int main() {
+    vector<int>v={1,2,3,4,6,10,14};
+    int k=4;
+    int mini=v[0];
+    int maxi=v[v.size()-1];
+    for(int i=mini;i<=maxi;i++){
+        if(!binarySearch(v,i)){
+          cout<<i;
+        }
+    }
+    
+    
+    return 0;
 }
 
