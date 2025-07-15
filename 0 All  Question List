@@ -1,8 +1,14 @@
 
-                                      Question List [60]
+                                      Question List [32+10+3+22+8+11]=86
+0-Foundation;
+1-Function;
+2-sorting;
+3-array;
+4-binarysearch;
+5-string;
 
 
-                                        chapter-0 
+                                        chapter-0  [32] Foundation
                                      conditional Statement
 
 
@@ -53,7 +59,7 @@ Q16-electronic digit;
 
 
 
- chapter -1  function
+ chapter -1  function 
 1-find char convert(char name);
 2-find  armStrongnumber;
 3- sum of digit;
@@ -111,7 +117,7 @@ topic  two pointer approach
  8- Kth Missing Positive Number ;
  lect[25-26] most important binary Search pending 
 
-chapter -5
+chapter -5 String 
 1-longest palindrome;
 2-sort the sentence
 4-clockwise and anticlockwise
