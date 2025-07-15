@@ -112,9 +112,10 @@ topic  two pointer approach
  3-first & last occurence via  binary search in array ;
  4-best place for this vlaue in the index;
  5-sqrt(x)by binary search;
- 6-Search in a Rotated Array ;
- 7-Peak index in a Mountain Array ;
- 8- Kth Missing Positive Number ;
+ 6-totaloccurance of element in the array;
+ 7-Search in a Rotated Array ;
+ 8-Peak index in a Mountain Array ;
+ 9- Kth Missing Positive Number ;
  lect[25-26] most important binary Search pending 
 
 chapter -5 String 
