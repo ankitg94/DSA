@@ -286,3 +286,21 @@ int main() {
     return 0;
 }
 
+        Question -8
+    //peak search in the mountain\\
+    
+vector<int>arr={1,16,18,24,2,1};
+    int start=0;
+    int end=arr.size()-1;
+    while(start<=end){
+        int mid=start+(end-start)/2;
+        if(arr[mid]>arr[mid+1] && arr[mid]>arr[mid-1]){
+            cout<< mid;
+            break;
+        }else if(arr[mid] > arr[mid-1]){
+            start=mid+1;
+        }else{
+            end=mid-1;
+        }
+    }
+
