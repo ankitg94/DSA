@@ -1,6 +1,9 @@
+
+question-1 
+binary search
+
 #include <iostream>
 using namespace std;
-
 int binarySearch(int arr[], int n,int key ){
  int start=0;
  int end=n;
@@ -32,7 +35,8 @@ int main() {
     return 0;
 }
 
-
+question -2 
+binary search with index;
 // int binarySearch (int arr[],int target){
 //      int start = 0;
 //      int end = 5;
@@ -65,6 +69,7 @@ int main() {
 //     }
 //     return 0;
 
+question -3
 //first and last occurance by using binary Search
 int binarySearch(int arr[],int size, int target ){
     int start=0;
