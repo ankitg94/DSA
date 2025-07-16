@@ -384,3 +384,37 @@ int main() {
    cout<<"ans"<<ans;
     return 0;
 }
+//12 aggresive cows 
+
+int main() {
+vector<int>v={1,2,4,8,9};
+//aggresive cows
+int start=v[0];
+int end=v[v.size()-1]-v[0];
+int ans;
+int n=5;
+int k=3;
+while(start<=end){
+    int mid=start+(end-start)/2;
+    int pos=v[0], count=1;
+    for(int i=1;i<n;i++){
+        if(pos+mid<=v[i]){
+            cout<<"pos +"<<pos<<" mid "<<mid<<" <= "<<v[i]<<endl;
+            count++;
+            pos=v[i];
+            cout<<"pos"<<pos<<endl;
+        }
+    }
+    cout<<"count"<<count<<endl;
+    if(count<k){
+        end=mid-1;
+        cout<<"end"<<end<<endl;
+    }else{
+        ans=mid;
+        cout<<"ans"<<ans<<endl;
+        start=mid+1;
+    }
+}
+cout<<"ans"<<ans;
+    return 0;
+}
