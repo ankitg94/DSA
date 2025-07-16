@@ -340,3 +340,47 @@ int main() {
 
     return 0;
 }
+question-11 book allocation problem;
+#include <iostream>
+using namespace std;
+#include <vector>
+int main() {
+    //book allocation problem;
+    vector<int>v ={5,10,30,20,15};
+    int m=3;
+    int n=5;
+    int start=0;
+    int end=0;
+    int ans;
+    
+    for(int i=0;i<n;i++){
+        start=max(start,v[i]);
+        end+=v[i];
+    }
+   while(start<=end){
+       int mid =(start+end)/2;
+       int page=0,count=1;
+       for(int i=0;i<n;i++){
+           page +=v[i];
+           cout<<"page  : "<<page<<endl;
+           cout<<"count : "<<count<<endl;
+           if(page>mid){
+               cout<<"page :"<<page<<"> mid :"<<mid<<endl;
+               count++;
+               page=v[i];
+               cout<<"count++ k badd wale "<<page<<endl;
+           }
+       }if(count<=m){
+           ans=mid;
+           cout<<"Ans"<<ans<<endl;
+           end=mid-1;
+           
+       }else{
+           start=mid+1;
+       }
+       cout<<"end"<<endl;
+   }
+   
+   cout<<"ans"<<ans;
+    return 0;
+}
