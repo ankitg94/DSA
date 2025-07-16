@@ -1,5 +1,5 @@
 
-                                      Question List [32+10+3+22+8+11]=86
+                                      Question List [32+10+3+22+13+11]=91
 0-Foundation;
 1-Function;
 2-sorting;
@@ -107,19 +107,19 @@ topic  two pointer approach
 
  chapter-4 binary search
 
- 1-binary search ;
- 2-binary search with index ;
- 3-first & last occurence via  binary search in array ;
- 4-best place for this vlaue in the index;
- 5-sqrt(x)by binary search;
- 6-total occurance of element in the array;
- 7-find  all the missing number in the array;
- 8-Search in a Rotated Array ;
- 9-Peak index in a Mountain Array ;
+ 1-  binary search ;
+ 2-  binary search with index ;
+ 3-  first & last occurence via  binary search in array ;
+ 4-  best place for this vlaue in the index;
+ 5-  sqrt(x)by binary search;
+ 6-  total occurance of element in the array;
+ 7-  find  all the missing number in the array;
+ 8-  Search in a Rotated Array ;
+ 9-  Peak index in a Mountain Array ;
  10- Kth Missing Positive Number ;
  11- book allocation problem; ****
- 12-Aggresive cows;
-13-koko eating baannana;
+ 12- Aggresive cows;
+ 13- koko eating baannana;
 
 chapter -5 String 
 1-longest palindrome;
