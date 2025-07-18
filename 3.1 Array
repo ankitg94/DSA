@@ -28,7 +28,10 @@ void PrintArray(int arr[],int size){
 
 
 int main() {
+
   //question-1
+
+
 //find the minimum
 int arr[8]={10,20,30,40,5,8,3,9};    
 int ans =INT_MAX;//min
@@ -41,7 +44,9 @@ for(int i=0;i<7;i++){
 }
 cout<<"min :"<<ans;
 
-//question -2 find the max
+//question -2
+
+find the max
 int arr[8]={10,20,30,40,5,8,3,9};    
 int ans =INT_MIN;//min
 
@@ -52,7 +57,10 @@ for(int i=0;i<7;i++){
     }
 }
 cout<<"MAX :"<<ans;
-//question -3 find the sum total element of array; 
+
+//question -3 
+
+find the sum total element of array; 
 int arr[8]={10,20,30,40,5,8,3,9};    
 int ans =0;
 
@@ -63,6 +71,8 @@ cout<<"total : "<<ans;
 
 
     //question-4 linear search
+
+
     // int n;
     // cout<<"enter the number : ";
     // cin>>n;
@@ -76,7 +86,10 @@ cout<<"total : "<<ans;
     // cout<<"This element is not available in this array ";
     
     //Q-5 reverse the array newArray ,oldArray
-    int arr[9]={10,20,30,40,5,8,3,9,7};  
+
+
+
+int arr[9]={10,20,30,40,5,8,3,9,7};  
 int size =sizeof(arr)/sizeof(arr[0]);
 //reverse in new array
 // int puranaarr[8];
@@ -97,6 +110,8 @@ for(int i=0;i<size;i++){
 }
 
        //Q-6 second max
+
+
        for(int i=0; i<13; i++){
           for(int  j=i+1;j<13;j++){
          if(arr[i]>arr[j]){
@@ -114,7 +129,10 @@ for(int i=0;i<size;i++){
     cout<<"second largest number : "<<arr[1];
 
 
-   //Q-7 missing number     
+   //Q-7 missing number 
+
+
+
    int  arr[6] ={1,3,4,5,2};
    int length =sizeof(arr)/sizeof(int);
    int num=0;
@@ -132,6 +150,9 @@ for(int i=0;i<size;i++){
 
 
 //Q-8 fibbonacci series
+
+
+
     int n;
     cout<<"Enter the number :";
     cin>>n;
@@ -144,6 +165,11 @@ for(int i=0;i<size;i++){
       arr[i] =arr[i-1]+arr[i-2];        
     }
     cout<<arr[n-1];
+
+
+    //question- 9/10  
+
+
 
 
     // Rotate array by left/right 
@@ -160,7 +186,10 @@ for(int i=0;i<size;i++){
    PrintArray(arr,size);
 
 
-question-11 -find duplicate,remove duplicate;
+question-11/12 -find duplicate,remove duplicate;
+
+
+
 vector<int> ans;
 vector<int> duplicate;
 vector<int> arr={1,2,2,1,3,1,3};
@@ -194,6 +223,8 @@ for(int i=0;i<arr.size();i++){
         cout << num << " ";
     }
 
+question 13-== question -22;
+
 
 //question 14- 
 
@@ -219,6 +250,53 @@ for(int i=0;i<arr.size();i++){
 cout<<"player1 "<<player1;
 cout<<endl;
 cout<<"player2 "<<player2;
+
+   //question-15
+
+move o start and 1 end  
+    int arr[6]={5,7,9,1,0,1};
+    int start=0;
+    int end=5;
+    int key 7;
+    while(start<end){
+        if(arr[start]==0){
+            start++;
+        }else{
+            if(arr[end]==0){
+                arr[start]+arr[end]==key;
+            }else{
+                end--;
+            }
+        }
+    }
+    cout<<"start"<<start;
+    cout<<"end"<<end;
+    for(int i=0;i<=5;i++){
+        cout<<arr[i];
+    }
+    //question-16
+
+-pair sum 
+    
+    //  vector<int> twoSum(vector<int>& numbers, int target) {
+    //     int start=0;
+    //     int end =numbers.size()-1;
+    //     vector <int>ans;
+    //     while(start<end){
+    //         if(numbers[start]+numbers[end]==target){
+    //             ans.push_back(start+1);
+    //             ans.push_back(end+1);
+    //             return ans;
+    //         }if(numbers[start]+numbers[end]>target){
+    //           end--;
+    //         }else{
+    //             start++;
+    //         }
+
+    //         }
+    //         return ans;
+    //     }
+        
 
  
 
