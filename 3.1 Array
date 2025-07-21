@@ -348,6 +348,9 @@ vector<int> arr={1,3,4,7,8,9,46};
         }
     }
 
+
+ //question -17
+
    //prefix sum;
     vector<int>arr={1,4,8,9,12,-4};
     vector<int>prefix;
@@ -380,7 +383,7 @@ vector<int> arr={1,3,4,7,8,9,46};
 }
 
 
-//question -17
+
 
 
 //  Array into 2 equal Sum Subarray
