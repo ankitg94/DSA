@@ -190,8 +190,7 @@ for(int i=0;i<size;i++){
 
 
 question-11/12 -find duplicate,remove duplicate;
-
-
+//****all time favrt use unordered map which will give freq,unique ,duplicate all**//
 
 vector<int> ans;
 vector<int> duplicate;
@@ -212,10 +211,6 @@ for(int i=0;i<arr.size();i++){
     }
 
 }
-
-
-
-
  cout << "find duplicates:" << endl;
     for (int num : duplicate) {
         cout << num << " ";
@@ -226,7 +221,36 @@ for(int i=0;i<arr.size();i++){
         cout << num << " ";
     }
 
-question 13-== question -22;
+question 13
+count frequency;
+
+// vector<int>arr={1,2,3,5,1,4};
+// vector<int>counter(50,0);
+// for(int i=0;i<arr.size();i++){
+//     counter[arr[i]]++;
+// };
+// for(int i=0;i<arr.size();i++){
+//     if(counter[i]>0){
+//     cout<<i<<" ="<<counter[i]<<endl;
+//     }
+// }
+
+    return 0;
+}
+      //best approch
+      int n=arr.size();
+      
+      vector<int>freq(1+n,0);
+      vector<int>result;
+      for(int i=0;i<n;i++){
+         freq[arr[i]]++;
+      }
+      for (int i = 1; i <= n; i++) {
+    if (freq[i] > 1) {
+        result.push_back(i);  // duplicate found
+    }
+}
+ 
 
 
 //question 14- 
@@ -303,7 +327,7 @@ move o start and 1 end
 
  
 
-   //question 17 
+   //question 16
 
 
 //pair with given difference;
@@ -356,7 +380,7 @@ vector<int> arr={1,3,4,7,8,9,46};
 }
 
 
-//question -18
+//question -17
 
 
 //  Array into 2 equal Sum Subarray
@@ -382,7 +406,7 @@ vector<int> arr={1,3,4,7,8,9,46};
 
 
 
-//question-19
+//question-18
 
 
 two sum long method
@@ -419,9 +443,9 @@ while(start<end){
     
 }
 
-//question 20   [ 2-question ] 
+//question 19   [ 2-question ] 
 
-//20---maximum of the Subarray(kandane algo)
+//19---maximum of the Subarray(kandane algo)
  int arr[9]={1,-3,5,-6,7,15,-7,8,-10};
     int maxi=INT_MIN;
     int sum =0;
@@ -468,64 +492,7 @@ int main() {
 
 
 
-    //question 21
 
 
 
 
-find duplicate o(n2);
-    //  vector<int>arr={1, 8, 4 ,3, 6 ,9, 5, 7 ,2, 7 ,0};
-    //   int l=arr.size();
-    //   vector<int>arr2;
-    //   vector<int>result;
-    //   for(int i=0;i<l;i++){
-    //       arr2.push_back(arr[i]);
-    //   }
-    //   for(int i=0;i<l;i++){
-    //       bool isalready=false;
-    //       for(int j=i+1;j<l;j++){
-    //           if(arr[i]==arr2[j]){
-    //               isalready=true;
-    //               break;
-    //           }
-    //       }
-    //       if(isalready){
-    //               result.push_back(arr[i]);
-    //       }
-    //   }
-    //   for(int i=0;i<result.size();i++){
-    //       cout<<"res"<<result[i]<<endl;
-    //   }
-    
-      //best approch
-      int n=arr.size();
-      
-      vector<int>freq(1+n,0);
-      vector<int>result;
-      for(int i=0;i<n;i++){
-         freq[arr[i]]++;
-      }
-      for (int i = 1; i <= n; i++) {
-    if (freq[i] > 1) {
-        result.push_back(i);  // duplicate found
-    }
-}
-
-//question 22 
-
-
-count frequency;
-
-// vector<int>arr={1,2,3,5,1,4};
-// vector<int>counter(50,0);
-// for(int i=0;i<arr.size();i++){
-//     counter[arr[i]]++;
-// };
-// for(int i=0;i<arr.size();i++){
-//     if(counter[i]>0){
-//     cout<<i<<" ="<<counter[i]<<endl;
-//     }
-// }
-
-    return 0;
-}
