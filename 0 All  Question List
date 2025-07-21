@@ -96,13 +96,11 @@ Q16-electronic digit;
 14-Random Turn-Based Number Selection
 topic  two pointer approach
 15-move o to start and 1 to end
-16-pair Sum
-17-pair difference
-18-Array into 2 equal Sum Subarray
-19-two sum (solveing by 2 method long mehtod and binary search)
-20-kandane algo
-21-find duplicate;
-22 count frequency;
+16-pair difference
+17-Array into 2 equal Sum Subarray
+18-two sum (solveing by 2 method long mehtod and binary search)
+19-kandane algo
+
 //love babar dsa  series also add check the question answer 
 
  chapter-4 binary search
