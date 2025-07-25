@@ -97,9 +97,10 @@ Q16-electronic digit;
 topic  two pointer approach
 15-move o to start and 1 to end
 16-pair  sum || difference
-17-Array into 2 equal Sum Subarray
+17-prefix sum || suffix sum|| Array into 2 equal Sum Subarray
 18-two sum (solveing by 2 method long mehtod and binary search)
 19-kandane algo
+20-3sum 
 
 //love babar dsa  series also add check the question answer 
 
